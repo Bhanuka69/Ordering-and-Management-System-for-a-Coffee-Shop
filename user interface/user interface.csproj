@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69060493-01FE-42A7-86E0-DDB0EB6D8B80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>user_interface</RootNamespace>
+    <AssemblyName>user interface</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DragAssembly">
+      <HintPath>..\..\..\..\Downloads\DragAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna UI Activation\Guna UI Activation\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_employee.Designer.cs">
+      <DependentUpon>Add_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_items.Designer.cs">
+      <DependentUpon>Add_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_settings.Designer.cs">
+      <DependentUpon>Admin_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coffee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coffee.Designer.cs">
+      <DependentUpon>coffee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_ShopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coffee_ShopDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_ShopDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coffee_ShopDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_ShopDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coffee_ShopDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_ShopDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coffee_ShopDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Daily_sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Daily_sales.Designer.cs">
+      <DependentUpon>Daily_sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="food_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="food_items.Designer.cs">
+      <DependentUpon>food_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lasagna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lasagna.Designer.cs">
+      <DependentUpon>lasagna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pizza.Designer.cs">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="savouries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="savouries.Designer.cs">
+      <DependentUpon>savouries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_settings.Designer.cs">
+      <DependentUpon>user_settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_employee.resx">
+      <DependentUpon>Add_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_items.resx">
+      <DependentUpon>Add_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_settings.resx">
+      <DependentUpon>Admin_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coffee.resx">
+      <DependentUpon>coffee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daily_sales.resx">
+      <DependentUpon>Daily_sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="food_items.resx">
+      <DependentUpon>food_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lasagna.resx">
+      <DependentUpon>lasagna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pizza.resx">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="savouries.resx">
+      <DependentUpon>savouries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_settings.resx">
+      <DependentUpon>user_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Coffee_ShopDataSet.xsc">
+      <DependentUpon>Coffee_ShopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Coffee_ShopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Coffee_ShopDataSet.xss">
+      <DependentUpon>Coffee_ShopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet1.xsc">
+      <DependentUpon>Coffee_ShopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Coffee_ShopDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Coffee_ShopDataSet1.xss">
+      <DependentUpon>Coffee_ShopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet2.xsc">
+      <DependentUpon>Coffee_ShopDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Coffee_ShopDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Coffee_ShopDataSet2.xss">
+      <DependentUpon>Coffee_ShopDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet3.xsc">
+      <DependentUpon>Coffee_ShopDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Coffee_ShopDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Coffee_ShopDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Coffee_ShopDataSet3.xss">
+      <DependentUpon>Coffee_ShopDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-coffee-cup-coffee-beans-black-coffee-cup-coffee-beans-hot-drink-morning-dark-wallpaper-expresso-140450694.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-173245886-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vegetable squiche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lorraine quiche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuna puff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vegetable squiche1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chiken quiche 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom puff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicago cheese cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate-Croissants.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oreo-Cheesecake-recipe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MM-CHICKEN_LASAGNA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2012__11__Vegetarian-Lasagna-LEAD-1-6173a71bfd1347aa8d7659150e87b8f4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sausage-Pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tandoori pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\margarita-pizza-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecchia-arrabbiata-pizzajpg-07582c541e031c98-1531911069.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croissant_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lasagna_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake_50px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
